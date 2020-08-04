@@ -6,7 +6,7 @@ import org.testng.annotations.DataProvider;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = ".", dryRun = false,strict = true)
+@CucumberOptions(features = ".", dryRun = false,strict = true,format = {"pretty", "html:target/Destination"} )
 public class TestRunner extends AbstractTestNGCucumberTests {
     @Override
     @DataProvider(parallel = true)
